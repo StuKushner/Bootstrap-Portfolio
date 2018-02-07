@@ -1,75 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>Stuart Kushner's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale-1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Stuart Kushner's Portfolio</title>
+
+  <!-- Bootstrap Stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Own own CSS stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+  
 </head>
 
 <body>
+  <!-- Start of navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid navbar-custom">
 
-	 <nav class="navbar navbar-default">
-     <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">Stuart Kushner</a>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">About</a></li>
-          <li><a href="file:///Users/stuartkushner/Downloads/CWRU%20Bootcamp/Bootstrap-Portfolio/portfolio.html">Portfolio</a></li>
-          <li><a href="file:///Users/stuartkushner/Downloads/CWRU%20Bootcamp/Bootstrap-Portfolio/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="page-header">
-          <h1>About Me</h1>
-        </div>
-
-        <div class="row">
-          <div class="col-md-2">
-            <img src="profile picture copy.jpg" alt="Placeholder" class="img-thumbnail" style="height: 250px; width: 100%">
-          </div>
-          <div class="col-md-6">
-            <p>My name is Stuart Kushner, and I am someone who is aspiring for great things in life. When I am not coding, I like music, travel, exercise, and food and drink.</p>
-
-            <p>If you are at all curious about my work, don't hesitate to look around the portfolio. Thank you! If you are at all curious about my work, don't hesitate to look around the portfolio. Thank you!</p>
-          </div>
-          <div class="col-md-4">
-        	<div class="panel panel-default">
-          		<div class="panel-heading">
-            		<h2 class="panel-title">Connect With Me</h2>
-          		</div>
-          	<div class="panel-body">
-              <img src="https://github.com/StuKushner" class="fa fa-github fa-3x" style="margin-right: 10px"></a>
-              <img src="https://www.linkedin.com/in/stuart-kushner-81244979/" class="fa fa-linkedin fa-3x" style="margin-right: 10px"></a>
-              <img src="https://stackoverflow.com/users/story/8732820#" class="fa fa-stack-overflow fa-3x" style="margin-right: 10px"></a>
-          	</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-  <div id="footer">
-    <div class="container" style="text-align: center; position: fixed; bottom: 0">
+      <!-- Group brand and toggle for better mobile display -->
       <div class="row">
-        <div class="col-md-12">
-          <p class="text-muted">&copy; Copyright 2017 Stuart Kushner</p>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="col-xs-12 phone-nav">
+            <a class="navbar-brand" href="#" id="logo">Stuart Kushner</a>
+          </div>
         </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right navbar-right-custom">
+            <li><a href="index.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+       </div> <!--/ .navbar collapse -->
       </div>
+    </div> <!--/ .container-fluid -->
+  </nav>
+  <!-- End of navbar -->
+  
+  <!-- Start of content wrap -->
+  <div class="wrap">
+    <div class="container">
+      <section class="row">
+        <div class="col-md-8">
+          <article class="about-me-content">
+            <h1 class="about-me-header">About Me</h1>
+            <hr />
+            <img src="assets/images/profile picture copy.jpg" alt="" id="stuart-image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <br />
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </article>
+        </div>
+        <div class="col-md-4">
+        <!-- Start of Connect With Me area -->
+          <section id="connect-with-me-area">
+            <div class="connect-with-me-content">
+              <h1 class="connect-with-me-header">Connect With Me</h1>
+              <hr />
+              <div id="images">
+                <img src="assets/images/github.png" alt="" class="connect-with-me-photo">
+                <img src="assets/images/linkedin.png" alt="" class="connect-with-me-photo">
+                <img src="assets/images/stackover2.png" alt="" class="connect-with-me-photo">
+              </div>
+            </div>
+          </section>
+          <!-- End of Connect With Me area -->  
+        </div>
+      </section>
     </div>
   </div>
+  <!-- End of content wrap -->
+
+  <!-- Start of footer -->
+  <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright 2017 Stuart Kushner
+    </p>
+  </footer>
+  <!-- End of footer -->
+
     <!-- jQuery CDN -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <!-- Bootstrap JavaScript CDN -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 </html>
